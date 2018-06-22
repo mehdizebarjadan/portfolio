@@ -21,3 +21,10 @@ npm install clean-webpack-plugin --save-dev
 
 Using webpack-dev-server
 npm install --save-dev webpack-dev-server
+
+Setting Up React and Babel
+npm install react react-dom --save
+npm install babel-core babel-loader babel-preset-env babel-preset-react -D
+npm install --save-dev babel-preset-stage-2
+
+touch .babelrc

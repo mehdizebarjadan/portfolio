@@ -19,7 +19,10 @@ module.exports = {
   plugins: [
       new CleanWebpackPlugin(['dist']),
       new HtmlWebpackPlugin({
-        title: 'Portfolio'
+        hash: true,
+        title: 'My Awesome application',
+        myPageHeader: 'Hello World',
+        template: './src/index.html'
       }),
       new webpack.NamedModulesPlugin(),
       new webpack.HotModuleReplacementPlugin()
@@ -57,7 +60,15 @@ module.exports = {
         use: [
           'xml-loader'
         ]
+      },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader']
       }
     ]
+  },
+  resolve: {
+    extensions: ['*', '.js', '.jsx']
   }
 };
