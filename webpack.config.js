@@ -4,9 +4,10 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: {
-      app: './src/index.js'
-  },
+  entry: [
+      './src/index.js',
+      'react-hot-loader/patch'
+  ],
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',

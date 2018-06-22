@@ -28,3 +28,6 @@ npm install babel-core babel-loader babel-preset-env babel-preset-react -D
 npm install --save-dev babel-preset-stage-2
 
 touch .babelrc
+
+Hot Module Replacement in React
+npm install --save-dev react-hot-loader
